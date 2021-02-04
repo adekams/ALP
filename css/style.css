@@ -80,7 +80,7 @@ nav {
     width: 100%;
     background: var(--blue);
     border-bottom: 1px solid lightblue;
-    padding: 20px;
+    padding: 10px;
 }
  
 nav a,
@@ -96,11 +96,18 @@ nav a:hover {
 nav ul li {
     display: inline-block;
     list-style: none;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 nav .logo {
     font-size: 2rem;
+}
+
+nav .login {
+    border: 1px solid transparent;
+    background: var(--green);
+    border-radius: 5px;
+    padding: 10px 25px;
 }
 
 /* all sections */
@@ -170,11 +177,15 @@ section ul li::before {
     transform: skewY(-3deg);
 }
 
-h2.section-title {
+h2.section-title, h2 p {
     color: var(--blue);
-    font-size: 1.8rem;
+    font-size: 1.8rem;   
+}
+
+h2.section-title {
     margin: 0 0 25px;
 }
+
 .hero h2 {
     font-size: 2.2rem;
     color: #fff;
