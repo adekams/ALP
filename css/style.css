@@ -81,6 +81,7 @@ nav {
     background: var(--blue);
     border-bottom: 1px solid lightblue;
     padding: 10px;
+    text-align: right;
 }
  
 nav a,
@@ -113,12 +114,18 @@ nav .login {
 /* all sections */
 section {
     margin: 0 auto;
-    padding: 50px 30px;
+    padding: 70px 30px;
 }
 
 section:nth-child(odd) .section-img,
 section:nth-child(even) p.sub-title {
     margin-top: 50px;
+}
+
+section:nth-child(3),
+section:nth-child(5){
+   /* background: linear-gradient(to right, rgba(244, 244, 254, .8),rgba(219, 206, 228, .5)); */
+   background: linear-gradient(to left, #b8c6db, #d6dae0, #f4f5fa);
 }
 
 section ul {
@@ -155,6 +162,17 @@ section ul li::before {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     gap: 60px 40px;
+}
+
+.btn-wrapper { 
+    margin-top: 15px;
+    justify-content: space-between;
+    max-width: 280px;
+}
+
+.btn-wrapper button {
+    margin:10px 0;
+    width: 170px;
 }
 
 /* heros section */
@@ -282,6 +300,7 @@ footer .copyright {
     font-family: 'Elsie Swash Caps', cursive;
 }
 
+/* devices with 768px and above */
 @media (min-width:768px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
@@ -329,14 +348,17 @@ footer .copyright {
         margin-top: 0;
     }
 
-
     .center p.text {
         width: 80%;
         margin: 0 auto;
     }
 
+    .btn-wrapper {
+        max-width: 380px;
+    }
+
     .wave-container {
-        margin-top: 300px;
+        margin-top: 250px;
     }
 
     footer .lower-img {
